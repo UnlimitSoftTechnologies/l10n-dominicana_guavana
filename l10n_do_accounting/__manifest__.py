@@ -11,7 +11,7 @@
     "license": "LGPL-3",
     "website": "https://github.com/odoo-dominicana",
     "category": "Localization",
-    "version": "18.0.1.0.3",
+    "version": "19.0.1.0.3",
     # any module necessary for this one to work correctly
     "depends": ["base", "web", "account", "l10n_do", "account_debit_note"],
     # any python dependencies for this one to work correctly
