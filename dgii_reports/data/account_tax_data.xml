@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo noupdate="1">
+<odoo noupdate="0">
     <!-- Sales -->
     <record id="account.1_tax_18_sale" model="account.tax">
         <field name="l10n_do_tax_type">itbis</field>
@@ -22,6 +22,15 @@
         <field name="l10n_do_tax_type">itbis</field>
         <field name="description">ITBIS 0% Sale</field>
         <field name="invoice_label">ITBIS 0% Sale</field>
+    </record>
+    <record id="1_tax_16_sale_ecf" model="account.tax">
+        <field name="name">ITBIS 16% Sale</field>
+        <field name="amount">16</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="l10n_do_tax_type">itbis</field>
+        <field name="description">ITBIS 16% Sale</field>
+        <field name="invoice_label">ITBIS 16% Sale</field>
     </record>
     <record id="account.1_tax_0_sale" model="account.tax">
         <field name="amount">0</field>

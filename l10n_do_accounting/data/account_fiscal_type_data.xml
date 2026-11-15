@@ -189,7 +189,7 @@
         <field name="sequence">21</field>
         <field name="padding">10</field>
         <field name="assigned_sequence" eval="True" />
-        <field name="requires_document" eval="False" />
+        <field name="requires_document" eval="True" />
         <field name="active" eval="True" />
     </record>
     <record id="ecf_minor_supplier" model="account.fiscal.type">

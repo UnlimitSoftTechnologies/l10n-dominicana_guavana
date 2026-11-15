@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-20 22:32+0000\n"
-"PO-Revision-Date: 2024-02-20 22:32+0000\n"
+"POT-Creation-Date: 2026-11-15 03:14+0000\n"
+"PO-Revision-Date: 2026-11-15 03:14+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,6 @@ msgstr ""
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "%s %s Sequence"
 msgstr "%s %s Secuencia"
 
@@ -30,12 +29,12 @@ msgstr "01 - Deterioro de Factura Pre-impresa"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__01
 msgid "01 - Deterioro de Factura Pre-impresa"
-msgstr ""
+msgstr "01 - Deterioro de Factura Pre-impresa"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__01
 msgid "01 - Gastos de Personal"
-msgstr ""
+msgstr "01 - Gastos de Personal"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__income_type__01
@@ -50,7 +49,7 @@ msgstr "01 - Gastos del Personal"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__02
 msgid "02 - Errores de Impresión (Factura Pre-impresa)"
-msgstr ""
+msgstr "02 - Errores de Impresión (Factura Pre-impresa)"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__expense_type__02
@@ -65,7 +64,7 @@ msgstr "02 - Ingresos Financieros"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__02
 msgid "02 - Gastos por Trabajo, Suministros y Servicios"
-msgstr ""
+msgstr "02 - Gastos por Trabajo, Suministros y Servicios"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__02
@@ -100,7 +99,7 @@ msgstr "03 - Arrendamientos"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__04
 msgid "04 - Corrección de la Información"
-msgstr ""
+msgstr "04 - Corrección de la Información"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__04
@@ -115,7 +114,7 @@ msgstr "04 - Gastos de Activos Fijos"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__04
 msgid "04 - Gastos de Activos Fijos"
-msgstr ""
+msgstr "04 - Gastos de Activos Fijos"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__income_type__04
@@ -125,7 +124,7 @@ msgstr "04 - Ingresos por alquiler"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__05
 msgid "05 - Cambio de Productos"
-msgstr ""
+msgstr "05 - Cambio de Productos"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__05
@@ -150,7 +149,7 @@ msgstr "05 - Ingresos por Venta o Depreciación de Activos"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__06
 msgid "06 - Devolución de Productos"
-msgstr ""
+msgstr "06 - Devolución de Productos"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__expense_type__06
@@ -165,7 +164,7 @@ msgstr "06 - Otros Ingresos"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__06
 msgid "06 - Otras Deducciones Admitidas"
-msgstr ""
+msgstr "06 - Otras Deducciones Admitidas"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__06
@@ -180,12 +179,12 @@ msgstr "07 - Gastos Financieros"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__07
 msgid "07 - Gastos Financieros"
-msgstr ""
+msgstr "07 - Gastos Financieros"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__07
 msgid "07 - Omisión de Productos"
-msgstr ""
+msgstr "07 - Omisión de Productos"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__07
@@ -195,7 +194,7 @@ msgstr "07 - Omisión de Productos"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__08
 msgid "08 - Errores en Secuencia de NCF"
-msgstr ""
+msgstr "08 - Errores en Secuencia de NCF"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__08
@@ -210,12 +209,12 @@ msgstr "08 - Gastos Extraordinarios"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__08
 msgid "08 - Gastos Extraordinarios"
-msgstr ""
+msgstr "08 - Gastos Extraordinarios"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__09
 msgid "09 - Compras y Gastos que forman parte del Costo de Venta"
-msgstr ""
+msgstr "09 - Compras y Gastos que forman parte del Costo de Venta"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__09
@@ -225,7 +224,7 @@ msgstr "09 - Por Cese de Operaciones"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__09
 msgid "09 - Por Cese de Operaciones"
-msgstr ""
+msgstr "09 - Por Cese de Operaciones"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__expense_type__09
@@ -240,7 +239,7 @@ msgstr "10 - Adquisiciones de Activos"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__10
 msgid "10 - Adquisiciones de Activos"
-msgstr ""
+msgstr "10 - Adquisiciones de Activos"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__annulation_type__10
@@ -250,12 +249,12 @@ msgstr "10 - Pérdida o Hurto de libro de facturas"
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_invoice_cancel__annulation_type__10
 msgid "10 - Pérdida o Hurto de Talonarios"
-msgstr ""
+msgstr "10 - Pérdida o Hurto de Talonarios"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__res_partner__expense_type__11
 msgid "11 - Gastos de Seguro"
-msgstr ""
+msgstr "11 - Gastos de Seguro"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__expense_type__11
@@ -274,13 +273,13 @@ msgstr ""
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.view_move_form_inherit
 msgid ""
-"<span class=\"o_form_label\" attrs=\"{'invisible': "
-"['|',('state','=','draft'), ('is_debit_note','=',False)]}\">Debit "
-"Note</span>"
+"<span class=\"o_form_label\" invisible=\"state == 'draft' or not is_debit_note\">\n"
+"                    Debit Note\n"
+"                </span>"
 msgstr ""
-"<span class=\"o_form_label\" attrs=\"{'invisible': "
-"['|',('state','=','draft'), ('is_debit_note','=',False)]}\">Nota de "
-"débito</span>"
+"<span class=\"o_form_label\" invisible=\"state == 'draft' or not is_debit_note\">\n"
+"                    Nota de Débito\n"
+"                </span>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_form
@@ -290,33 +289,42 @@ msgstr "<span class=\"o_stat_text\">Secuencia</span>"
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_form
 msgid "<span>%</span>"
-msgstr ""
+msgstr "<span>%</span>"
 
 #. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.external_layout_standard_inherited
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.report_invoice_document_inherit
-msgid "<strong>Date:</strong>"
-msgstr "<strong>Fecha:</strong>"
+msgid "<strong>Customer:</strong>"
+msgstr "<strong>Cliente:</strong>"
+
+#. module: l10n_do_accounting
+#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.complete_fiscal_info
+msgid "<strong>Invoice Number:</strong>"
+msgstr "<strong>Número de Factura:</strong>"
+
+#. module: l10n_do_accounting
+#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.complete_fiscal_info
+msgid "<strong>Issue Date:</strong>"
+msgstr "<strong>Fecha de Emisión:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.fiscal_info
-msgid "<strong>NCF modified:</strong>"
-msgstr "<strong>NCF modificado:</strong>"
-
-#. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.receiver_fiscal_info
-msgid "<strong>Name or Corporate Name:</strong>"
-msgstr "<strong>Nombre o Razón social:</strong>"
+msgid "<strong>Modified e-NCF:</strong>"
+msgstr "<strong>e-NCF Modificado:</strong>"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.report_invoice_document_inherit
-msgid "<strong>Shipping Address:</strong>"
-msgstr "<strong>Dirección de Envío</strong>"
+msgid "<strong>RNC:</strong>"
+msgstr "<strong>RNC:</strong>"
+
+#. module: l10n_do_accounting
+#. odoo-python
+#: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
+msgid "A Fiscal Type with Type '%s' and Prefix '%s' already exists."
+msgstr "Ya existe un Tipo Fiscal con Tipo '%s' y Prefijo '%s'."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid ""
 "A fiscal type for Minor Expenses does not exist and you have to create one."
 msgstr "No existe un tipo fiscal para Gastos Menores y debe crear uno."
@@ -330,6 +338,11 @@ msgstr "Aceptar"
 #: model:res.groups,name:l10n_do_accounting.credit_note_group
 msgid "Access to Credit Notes"
 msgstr "Acceso a las notas de crédito"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_do_account_id
+msgid "Account"
+msgstr "Cuenta"
 
 #. module: l10n_do_accounting
 #: model:ir.model,name:l10n_do_accounting.model_account_fiscal_sequence
@@ -349,7 +362,12 @@ msgstr "Tipo de Cuenta Fiscal"
 #. module: l10n_do_accounting
 #: model:ir.model,name:l10n_do_accounting.model_account_move_reversal
 msgid "Account Move Reversal"
-msgstr "Revocación de movimiento en cuenta"
+msgstr "Reversión de movimiento de cuenta"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_do_debit_action
+msgid "Action"
+msgstr "Acción"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__message_needaction
@@ -369,6 +387,11 @@ msgid "Activities"
 msgstr "Actividades"
 
 #. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_res_company__l10n_do_dgii_start_date
+msgid "Activities Start Date"
+msgstr "Fecha de Inicio de Actividades"
+
+#. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__activity_exception_decoration
 msgid "Activity Exception Decoration"
 msgstr "Decoración de excepción de actividad"
@@ -384,16 +407,19 @@ msgid "Activity Type Icon"
 msgstr "Estado de actividad"
 
 #. module: l10n_do_accounting
+#: model:ir.model,name:l10n_do_accounting.model_account_debit_note
+msgid "Add Debit Note wizard"
+msgstr "Asistente para agregar nota de débito"
+
+#. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__origin_out
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__origin_out
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__origin_out
 msgid "Affects"
 msgstr "Afecta"
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "After the document type, all characters must be digits from 0 to 9."
 msgstr ""
 "Después del tipo de documento, todos los caracteres deben ser dígitos del 0 "
@@ -405,6 +431,11 @@ msgid "Almost no sequence"
 msgstr "Casi sin secuencia"
 
 #. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_do_amount
+msgid "Amount"
+msgstr "Monto"
+
+#. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_invoice_cancel__annulation_type
 msgid "Annulation Type"
 msgstr "Tipo de Anulación"
@@ -412,21 +443,24 @@ msgstr "Tipo de Anulación"
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__annulation_type
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__annulation_type
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__annulation_type
 msgid "Annulment Type"
 msgstr "Tipo de Anulación"
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "Another sequence is active for this type."
 msgstr "Hay otra secuencia activa para este tipo."
 
 #. module: l10n_do_accounting
 #. odoo-python
+#: code:addons/l10n_do_accounting/wizard/account_invoice_debit.py:0
+msgid "Apply debit"
+msgstr "Aplicar débito"
+
+#. module: l10n_do_accounting
+#. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid ""
 "Are you sure want to cancel this Fiscal Sequence? Once you cancel this "
 "Fiscal Sequence cannot be used."
@@ -437,7 +471,6 @@ msgstr ""
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid ""
 "Are you sure want to confirm this Fiscal Sequence? Once you confirm this "
 "Fiscal Sequence cannot be edited."
@@ -449,7 +482,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__assigned_sequence
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_type__assigned_sequence
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__assigned_sequence
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__assigned_sequence
 msgid "Assigned Sequence"
 msgstr "Secuencia asignada"
 
@@ -466,7 +498,6 @@ msgstr "Numero de autorización"
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__available_fiscal_type_ids
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__available_fiscal_type_ids
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__available_fiscal_type_ids
 msgid "Available Fiscal Type"
 msgstr "Tipo de comprobante"
 
@@ -479,6 +510,11 @@ msgstr "Bonos o Certificado de Regalo"
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__can_be_queue
 msgid "Can Be Queue"
 msgstr "Puede ser cola"
+
+#. module: l10n_do_accounting
+#: model:res.groups,name:l10n_do_accounting.group_l10n_do_debit_note
+msgid "Can create Debit Notes"
+msgstr "Puede crear Notas de Débito"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_form
@@ -505,12 +541,8 @@ msgstr "Cancelar la factura seleccionada"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.l10n_do_accounting_invoice_form_cancel_inherit
-msgid ""
-"Cancellation Reason:\n"
-"                    <br/>"
-msgstr ""
-"Razon de cancelación:\n"
-"                    <br/>"
+msgid "Cancellation Reason: <br/>"
+msgstr "Motivo de la Anulación: <br/>"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_fiscal_sequence__state__cancelled
@@ -521,7 +553,6 @@ msgstr "Cancelada"
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/wizard/account_invoice_refund.py:0
-#, python-format
 msgid ""
 "Cannot create a credit note for the invoice which is already reconciled, "
 "invoice should be unreconciled first, then only you can add credit note for "
@@ -534,7 +565,6 @@ msgstr ""
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/wizard/account_invoice_refund.py:0
-#, python-format
 msgid "Cannot create credit note for the draft/cancelled invoice."
 msgstr ""
 "No se puede crear una nota de crédito para el borrador/factura cancelada."
@@ -559,6 +589,11 @@ msgstr ""
 "la factura una vez conciliada."
 
 #. module: l10n_do_accounting
+#: model:ir.model,name:l10n_do_accounting.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__company_id
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_search
 msgid "Company"
@@ -577,9 +612,14 @@ msgstr "Contacto"
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__expense_type
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__expense_type
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__expense_type
 msgid "Cost & Expense Type"
 msgstr "Tipo de costo y gasto"
+
+#. module: l10n_do_accounting
+#. odoo-python
+#: code:addons/l10n_do_accounting/models/account_payment_term.py:0
+msgid "Counted"
+msgstr "Contado"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_res_partner__country_id
@@ -609,6 +649,8 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: l10n_do_accounting
+#. odoo-python
+#: code:addons/l10n_do_accounting/models/account_payment_term.py:0
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_journal__payment_form__credit
 msgid "Credit"
 msgstr "Crédito"
@@ -639,24 +681,29 @@ msgid "Customer Debit Note"
 msgstr "Nota de débito del cliente"
 
 #. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.receiver_fiscal_info
-msgid "Customer:"
-msgstr "Cliente:"
-
-#. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.l10n_do_accounting_view_partner_form
-msgid "Cédula"
-msgstr ""
-
-#. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_search
 msgid "Debit Note"
 msgstr "Nota de débito"
 
 #. module: l10n_do_accounting
+#: model:ir.model.fields,help:l10n_do_accounting.field_account_debit_note__l10n_do_amount
+msgid "Debit Note based fixed amount"
+msgstr "Nota de Débito por monto fijo"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,help:l10n_do_accounting.field_account_debit_note__l10n_do_percentage
+msgid "Debit Note based on origin invoice percentage"
+msgstr "Nota de Débito por porcentaje de la factura de origen"
+
+#. module: l10n_do_accounting
 #: model:ir.actions.act_window,name:l10n_do_accounting.action_invoice_out_debit_note
 msgid "Debit Notes"
 msgstr "Notas debito"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_res_company__l10n_do_ecf_deferred_submissions
+msgid "Deferred submissions"
+msgstr "Envíos diferidos"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_fiscal_sequence__state__depleted
@@ -674,10 +721,26 @@ msgid "Display Name"
 msgstr "Nombre para mostrar"
 
 #. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_latam_document_number
+msgid "Document Number"
+msgstr "Número de Documento"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_latam_document_type_id
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_fiscal_sequence__state__draft
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_search
 msgid "Draft"
 msgstr "Borrador"
+
+#. module: l10n_do_accounting
+#. odoo-python
+#: code:addons/l10n_do_accounting/wizard/account_invoice_debit.py:0
+msgid "Draft debit"
+msgstr "Débito en borrador"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_form
@@ -687,7 +750,6 @@ msgstr "Ej. 8001695033"
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "End sequence must be greater than start sequence."
 msgstr "La secuencia final debe ser mayor que la secuencia inicial."
 
@@ -703,11 +765,6 @@ msgid "Expiration Date"
 msgstr "Fecha de caducidad"
 
 #. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.fiscal_info
-msgid "Expiration e-NCF:"
-msgstr "Expiración e-NCF:"
-
-#. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_fiscal_sequence__state__expired
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_search
 msgid "Expired"
@@ -716,7 +773,7 @@ msgstr "Caducada"
 #. module: l10n_do_accounting
 #: model:ir.ui.menu,name:l10n_do_accounting.account_fiscal_sequence_menu_parent
 msgid "Fiscal"
-msgstr ""
+msgstr "Fiscal"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_journal__l10n_do_fiscal_journal
@@ -732,14 +789,12 @@ msgstr "Posición Fiscal"
 #: model:ir.actions.act_window,name:l10n_do_accounting.account_fiscal_sequence_validate_wizard_action
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__fiscal_sequence_id
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__fiscal_sequence_id
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__fiscal_sequence_id
 msgid "Fiscal Sequence"
 msgstr "Secuencia Fiscal"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__fiscal_sequence_status
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__fiscal_sequence_status
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__fiscal_sequence_status
 msgid "Fiscal Sequence Status"
 msgstr "Estado de la secuencia fiscal"
 
@@ -777,7 +832,6 @@ msgstr "Tipos fiscales"
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "Fiscal number can not be blank"
 msgstr "El número de comprobante fiscal no puede estar en blanco"
 
@@ -795,7 +849,6 @@ msgstr "Secuencia fiscal"
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__fiscal_type_id
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__fiscal_type_id
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__fiscal_type_id
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__fiscal_type_id
 msgid "Fiscal type"
 msgstr "Tipo de comprobante"
 
@@ -817,7 +870,6 @@ msgstr "Icono de fuente impresionante e.g. fa-tasks"
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid "Goods sales to overseas customers must have Exportaciones Fiscal Type"
 msgstr ""
 "Las ventas de bienes a clientes en el exterior deben tener Exportaciones "
@@ -839,7 +891,7 @@ msgstr "Tiene mensaje"
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_type__id
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_invoice_cancel__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__activity_exception_icon
@@ -850,6 +902,16 @@ msgstr "Icono"
 #: model:ir.model.fields,help:l10n_do_accounting.field_account_fiscal_sequence__activity_exception_icon
 msgid "Icon to indicate an exception activity."
 msgstr "Icono para indicar una actividad de excepción."
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,help:l10n_do_accounting.field_res_company__l10n_do_ecf_deferred_submissions
+msgid ""
+"Identify taxpayers who have been previously authorized to have sales through"
+" offline mobile devices such as sales with Handheld, enter others."
+msgstr ""
+"Identifica a los contribuyentes que han sido autorizados previamente para "
+"realizar ventas mediante dispositivos móviles sin conexión, como ventas con "
+"Handheld; indique otros."
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,help:l10n_do_accounting.field_account_fiscal_sequence__message_needaction
@@ -872,7 +934,6 @@ msgstr ""
 #: model:ir.model.fields,help:l10n_do_accounting.field_account_bank_statement_line__assigned_sequence
 #: model:ir.model.fields,help:l10n_do_accounting.field_account_fiscal_type__assigned_sequence
 #: model:ir.model.fields,help:l10n_do_accounting.field_account_move__assigned_sequence
-#: model:ir.model.fields,help:l10n_do_accounting.field_account_payment__assigned_sequence
 msgid ""
 "If checked, this Fiscal Type will use a Fiscal Sequence to generate Fiscal "
 "Numbers."
@@ -883,7 +944,6 @@ msgstr ""
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__income_type
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__income_type
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__income_type
 msgid "Income Type"
 msgstr "Tipo de ingresos"
 
@@ -906,7 +966,6 @@ msgstr "¿Se requiere información fiscal?"
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__is_l10n_do_fiscal_invoice
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__is_l10n_do_fiscal_invoice
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__is_l10n_do_fiscal_invoice
 msgid "Is Fiscal Invoice"
 msgstr "Es factura fiscal"
 
@@ -918,9 +977,13 @@ msgstr "Es seguidor"
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__is_debit_note
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__is_debit_note
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__is_debit_note
 msgid "Is debit note"
 msgstr "Es nota de debito"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_res_company__l10n_do_ecf_issuer
+msgid "Is e-CF issuer"
+msgstr "Es emisor de e-CF"
 
 #. module: l10n_do_accounting
 #: model:ir.model,name:l10n_do_accounting.model_account_journal
@@ -939,12 +1002,9 @@ msgid "Journal Type"
 msgstr "Tipo de diario"
 
 #. module: l10n_do_accounting
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence____last_update
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence_validate_wizard____last_update
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_type____last_update
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_invoice_cancel____last_update
-msgid "Last Modified on"
-msgstr "Última modificación el"
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_latam_country_code
+msgid "L10N Latam Country Code"
+msgstr "Código de País L10N Latam"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__write_uid
@@ -963,11 +1023,6 @@ msgid "Last Updated on"
 msgstr "Ultima actualización en"
 
 #. module: l10n_do_accounting
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__message_main_attachment_id
-msgid "Main Attachment"
-msgstr "Archivo adjunto principal"
-
-#. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__message_has_error
 msgid "Message Delivery error"
 msgstr "Error de entrega de mensajes"
@@ -983,16 +1038,28 @@ msgid "My Activity Deadline"
 msgstr "Fecha límite de mi actividad"
 
 #. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__refund_ref
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move_reversal__refund_ref
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.inherit_invoice_tree
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.view_move_form_inherit
 msgid "NCF"
-msgstr ""
+msgstr "NCF"
+
+#. module: l10n_do_accounting
+#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.fiscal_info
+msgid "NCF Expiration Date:"
+msgstr "Fecha de vencimiento NCF:"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,help:l10n_do_accounting.field_account_bank_statement_line__origin_out
+#: model:ir.model.fields,help:l10n_do_accounting.field_account_move__origin_out
+msgid "NCF number of Invoice that was affected by credit note."
+msgstr "Número de NCF de la factura afectada por la nota de crédito."
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.fiscal_info
 msgid "NCF:"
-msgstr ""
+msgstr "NCF:"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence_validate_wizard__name
@@ -1033,7 +1100,6 @@ msgstr "Siguiente número de esta secuencia"
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "No Fiscal Sequence available for this type of document."
 msgstr "No hay Secuencia Fiscal disponible para este tipo de documento."
 
@@ -1043,18 +1109,30 @@ msgid "No Fiscal Sequence found!"
 msgstr "No hay Secuencia Fiscal disponible para este tipo de documento!"
 
 #. module: l10n_do_accounting
+#. odoo-python
+#: code:addons/l10n_do_accounting/wizard/account_invoice_debit.py:0
+msgid "No document type found with type 'out_debit'."
+msgstr "No se encontró ningún tipo de documento con tipo 'out_debit'."
+
+#. module: l10n_do_accounting
 #: model:ir.model.fields.selection,name:l10n_do_accounting.selection__account_move__fiscal_sequence_status__no_fiscal
 msgid "No fiscal"
-msgstr ""
+msgstr "No fiscal"
+
+#. module: l10n_do_accounting
+#. odoo-python
+#: code:addons/l10n_do_accounting/wizard/account_invoice_debit.py:0
+msgid "No invoice found for this operation"
+msgstr "No se encontró ninguna factura para esta operación"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.actions.act_window,help:l10n_do_accounting.action_invoice_out_debit_note
 msgid ""
-"Note that the easiest way to create a debit note is to do it directly\n"
-"            from the customer invoice."
+"Note that the easiest way to create a debit note is to do it directly from the\n"
+"                customer invoice."
 msgstr ""
-"Tenga en cuenta que la forma más fácil de crear una nota de débito es hacerlo directamente\n"
-"             de la factura del cliente."
+"Tenga en cuenta que la forma más fácil de crear una nota de débito es hacerlo directamente desde la\n"
+"                factura del cliente."
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__message_needaction_counter
@@ -1094,7 +1172,6 @@ msgstr "Relleno"
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid "Partner [{}] {} doesn't have RNC/Céd, is required for NCF type {}"
 msgstr "Socio [{}] {} no tiene RNC/Céd, se requiere para NCF tipo {}"
 
@@ -1102,6 +1179,11 @@ msgstr "Socio [{}] {} no tiene RNC/Céd, se requiere para NCF tipo {}"
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_journal__payment_form
 msgid "Payment Form"
 msgstr "Forma de pago"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_do_percentage
+msgid "Percentage"
+msgstr "Porcentaje"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_type__prefix
@@ -1127,12 +1209,6 @@ msgstr "Tipo fiscal de compra"
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.account_fiscal_sequence_search
 msgid "Queue"
 msgstr "Cola"
-
-#. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.inherit_view_company_form
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.l10n_do_accounting_view_partner_form
-msgid "RNC"
-msgstr ""
 
 #. module: l10n_do_accounting
 #: model_terms:ir.actions.act_window,help:l10n_do_accounting.action_vendor_in_debit_note
@@ -1185,14 +1261,12 @@ msgstr "Tipo de comprobante"
 #. module: l10n_do_accounting
 #. odoo-javascript
 #: code:addons/l10n_do_accounting/static/src/xml/l10n_do_accounting.xml:0
-#, python-format
 msgid "Search cities..."
 msgstr "Buscar ciudades..."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice_cancel.py:0
-#, python-format
 msgid ""
 "Selected invoice(s) cannot be cancelled as they are already in 'Cancelled' "
 "or 'Paid' state."
@@ -1218,18 +1292,21 @@ msgstr "Inicio de secuencia"
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "Sequence values must be greater than zero."
 msgstr "Los valores de secuencia deben ser mayores que cero."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid "Service sales to oversas customer must have Consumo Fiscal Type"
 msgstr ""
 "Las ventas de servicios a clientes en el extranjero deben tener Tipo de "
 "Consumo Fiscal"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,help:l10n_do_accounting.field_res_company__l10n_do_dgii_start_date
+msgid "Start date on which the company began reporting to the DGII."
+msgstr "Fecha en que la compañía comenzó a reportar a la DGII."
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__state
@@ -1266,16 +1343,13 @@ msgid "Swap"
 msgstr "Intercambio"
 
 #. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.external_layout_standard_inherited
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.receiver_fiscal_info
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.report_invoice_document_inherit
-msgid "Tax ID"
-msgstr "RNC"
+#: model:ir.model.fields,help:l10n_do_accounting.field_account_debit_note__l10n_latam_country_code
+msgid "Technical field used to hide/show fields regarding the localization"
+msgstr "Campo técnico usado para ocultar/mostrar campos de la localización"
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid ""
 "The document type (%s) has (%s) digits. You are trying to input (%s) digits."
 msgstr ""
@@ -1285,21 +1359,18 @@ msgstr ""
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "The document type (%s) must start with (%s)"
 msgstr "El tipo de documento (%s) debe empezar por (%s)"
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "The fiscal number type (%s) is not a credit note."
 msgstr "El tipo de número fiscal (%s) no es una nota de crédito."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid ""
 "The invoice ({}) to which the credit note refers does not exist in the "
 "system or is not under the name of {}"
@@ -1310,37 +1381,28 @@ msgstr ""
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid ""
 "The invoice ({}) to which this credit note refers is more than 30 days old "
-"({}), therefore the ITBIS tax must be removed."
+"({} days), therefore the ITBIS tax must be removed."
 msgstr ""
 "La factura ({}) a la que se refiere esta nota de crédito tiene más de 30 "
-"días de antigüedad ({}), por lo tanto, debe remover los impuestos de ITBIS."
+"días ({} días), por lo tanto se debe quitar el impuesto ITBIS."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/wizard/account_fiscal_sequence_validate_wizard.py:0
-#, python-format
 msgid "There is no Fiscal Sequence to perform this action."
 msgstr "No existe una Secuencia Fiscal para realizar esta acción."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid "There is not active Fiscal Sequence for this type of document."
 msgstr "No existe Secuencia Fiscal activa para este tipo de documento."
 
 #. module: l10n_do_accounting
-#: model:ir.model.constraint,message:l10n_do_accounting.constraint_account_fiscal_type_type_prefix_uniq
-msgid "There must be only one Fiscal Type of this Type and Prefix"
-msgstr "Debe haber un solo Tipo Fiscal de este Tipo y Prefijo"
-
-#. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid ""
 "This customer invoice credit note has been created from: <a href=# data-oe-"
 "model=account.move data-oe-id=%d>%s</a><br>Reason: %s"
@@ -1351,21 +1413,18 @@ msgstr ""
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "This document type (%s) does not exist."
 msgstr "Este tipo de documento (%s) no existe."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "This origin fiscal number must have more than 3 characters"
 msgstr "Este número fiscal de origen debe tener más de 3 caracteres"
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid ""
 "This vendor bill credit note has been created from: <a href=# data-oe-"
 "model=account.move data-oe-id=%d>%s</a><br>Reason: %s"
@@ -1386,17 +1445,25 @@ msgid "Type of the exception activity on record."
 msgstr "Tipo de actividad de excepción registrada."
 
 #. module: l10n_do_accounting
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__ncf_expiration_date
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__ncf_expiration_date
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move_reversal__ncf_expiration_date
-#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_payment__ncf_expiration_date
-msgid "Valid until"
-msgstr "Válido hasta"
+#. odoo-python
+#: code:addons/l10n_do_accounting/models/account_invoice.py:0
+msgid "Unable to validate dates: one of the invoices has no date assigned."
+msgstr ""
+"No se pueden validar las fechas: una de las facturas no tiene fecha "
+"asignada."
 
 #. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.fiscal_info
-msgid "Valid until:"
-msgstr "Válido hasta:"
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__l10n_latam_use_documents
+msgid "Use Documents"
+msgstr "Usar Documentos"
+
+#. module: l10n_do_accounting
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_bank_statement_line__ncf_expiration_date
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_debit_note__ncf_expiration_date
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move__ncf_expiration_date
+#: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move_reversal__ncf_expiration_date
+msgid "Valid until"
+msgstr "Válido hasta"
 
 #. module: l10n_do_accounting
 #: model:ir.actions.act_window,name:l10n_do_accounting.action_vendor_in_debit_note
@@ -1407,11 +1474,6 @@ msgstr "Notas de débito del proveedor"
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_move_reversal__is_vendor_refund
 msgid "Vendor refund"
 msgstr "Reembolso del proveedor"
-
-#. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.receiver_fiscal_info
-msgid "Vendor:"
-msgstr "Proveedor:"
 
 #. module: l10n_do_accounting
 #: model:ir.model.fields,field_description:l10n_do_accounting.field_account_fiscal_sequence__warning_gap
@@ -1429,6 +1491,17 @@ msgid "Website communication history"
 msgstr "Historial de comunicación del sitio web"
 
 #. module: l10n_do_accounting
+#: model:ir.model.fields,help:l10n_do_accounting.field_res_company__l10n_do_ecf_issuer
+msgid "When activating this field, NCF issuance is disabled."
+msgstr "Al activar este campo, se deshabilita la emisión de NCF."
+
+#. module: l10n_do_accounting
+#. odoo-python
+#: code:addons/l10n_do_accounting/wizard/account_invoice_debit.py:0
+msgid "You are not allowed to issue Debit Notes"
+msgstr "No tiene permiso para emitir Notas de Débito"
+
+#. module: l10n_do_accounting
 #: model_terms:ir.actions.act_window,help:l10n_do_accounting.account_fiscal_sequence_action
 msgid "You can create your first Fiscal Sequence here."
 msgstr "Puede crear su primera Secuencia Fiscal aquí."
@@ -1436,7 +1509,6 @@ msgstr "Puede crear su primera Secuencia Fiscal aquí."
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_journal.py:0
-#, python-format
 msgid ""
 "You can not modify the field \"Fiscal Journal\" if there are validated "
 "invoices in this journal!"
@@ -1447,67 +1519,60 @@ msgstr ""
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid "You cannot cancel multiple fiscal invoices at a time."
 msgstr "No puede cancelar varias facturas fiscales a la vez."
 
 #. module: l10n_do_accounting
 #. odoo-python
+#: code:addons/l10n_do_accounting/wizard/account_invoice_debit.py:0
+msgid "You cannot create Debit Notes from multiple documents at a time."
+msgstr "No puede crear Notas de Débito desde varios documentos a la vez."
+
+#. module: l10n_do_accounting
+#. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid "You cannot delete a fiscal invoice that has been validated."
-msgstr ""
+msgstr "No puede eliminar una factura fiscal que ya fue validada."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
 msgid "You cannot duplicate a Fiscal Sequence."
 msgstr "No se puede duplicar una Secuencia Fiscal."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_fiscal_sequence.py:0
-#, python-format
-msgid "You cannot use another Fiscal Sequence range."
-msgstr "No puede usar otro rango de Secuencia Fiscal."
+msgid "You cannot use an overlapping Fiscal Sequence range."
+msgstr "No puede usar un rango de Secuencia Fiscal que se solape con otro."
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid "You cannot validate an invoice whose total amount is equal to 0"
 msgstr "No se puede validar una factura cuyo importe total sea igual a 0"
 
 #. module: l10n_do_accounting
 #: model:ir.actions.server,name:l10n_do_accounting.account_fiscal_sequence_expire_cron_ir_actions_server
-#: model:ir.cron,cron_name:l10n_do_accounting.account_fiscal_sequence_expire_cron
 msgid "[FISCAL] Expire sequences"
 msgstr "[FISCAL] Caducar secuencias"
 
 #. module: l10n_do_accounting
 #: model_terms:ir.ui.view,arch_db:l10n_do_accounting.fiscal_info
+msgid "e-NCF Expiration Date:"
+msgstr "Fecha de vencimiento e-NCF:"
+
+#. module: l10n_do_accounting
+#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.fiscal_info
 msgid "e-NCF:"
-msgstr ""
-
-#. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.inherit_view_company_form
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.l10n_do_accounting_view_partner_form
-msgid "ej. NNNNNNNNN"
-msgstr ""
-
-#. module: l10n_do_accounting
-#: model_terms:ir.ui.view,arch_db:l10n_do_accounting.l10n_do_accounting_view_partner_form
-msgid "ej. NNNNNNNNNNN"
-msgstr "ej. NNNNNNNNNN"
+msgstr "e-NCF:"
 
 #. module: l10n_do_accounting
 #. odoo-python
 #: code:addons/l10n_do_accounting/models/account_invoice.py:0
-#, python-format
 msgid ""
 "if the invoice amount is greater than RD$250,000.00 the customer should have"
-" RNC or Cédfor make invoice"
+" RNC or Cedula for make invoice"
 msgstr ""
-"Si el monto de la factura es mayor a RD$250,000.00 el cliente debe indicar "
-"un RNC o Cédula"
+"si el monto de la factura es mayor a RD$250,000.00, el cliente debe tener "
+"RNC o Cédula para emitir la factura"
