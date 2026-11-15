@@ -77,47 +77,48 @@
         Every layout of the company prints its own data of the company in its header
         (div name="company_address"). In a fiscal invoice they are printed at the top of the
         invoice, so the layout keeps only its logo. One inheritance for each layout; they
-        do the same.
+        do the same. The layout is also used by reports whose "o" is not an invoice (it can
+        be the company), so the model is checked before asking for the fiscal field.
     -->
     <template id="external_layout_standard_inherited" inherit_id="web.external_layout_standard">
         <xpath expr="//div[@name='company_address']" position="attributes">
-            <attribute name="t-if">not (o and o.is_l10n_do_fiscal_invoice)</attribute>
+            <attribute name="t-if">not (o and o._name == 'account.move' and o.is_l10n_do_fiscal_invoice)</attribute>
         </xpath>
     </template>
 
     <template id="external_layout_boxed_inherited" inherit_id="web.external_layout_boxed">
         <xpath expr="//div[@name='company_address']" position="attributes">
-            <attribute name="t-if">not (o and o.is_l10n_do_fiscal_invoice)</attribute>
+            <attribute name="t-if">not (o and o._name == 'account.move' and o.is_l10n_do_fiscal_invoice)</attribute>
         </xpath>
     </template>
 
     <template id="external_layout_bold_inherited" inherit_id="web.external_layout_bold">
         <xpath expr="//div[@name='company_address']" position="attributes">
-            <attribute name="t-if">not (o and o.is_l10n_do_fiscal_invoice)</attribute>
+            <attribute name="t-if">not (o and o._name == 'account.move' and o.is_l10n_do_fiscal_invoice)</attribute>
         </xpath>
     </template>
 
     <template id="external_layout_striped_inherited" inherit_id="web.external_layout_striped">
         <xpath expr="//div[@name='company_address']" position="attributes">
-            <attribute name="t-if">not (o and o.is_l10n_do_fiscal_invoice)</attribute>
+            <attribute name="t-if">not (o and o._name == 'account.move' and o.is_l10n_do_fiscal_invoice)</attribute>
         </xpath>
     </template>
 
     <template id="external_layout_folder_inherited" inherit_id="web.external_layout_folder">
         <xpath expr="//div[@name='company_address']" position="attributes">
-            <attribute name="t-if">not (o and o.is_l10n_do_fiscal_invoice)</attribute>
+            <attribute name="t-if">not (o and o._name == 'account.move' and o.is_l10n_do_fiscal_invoice)</attribute>
         </xpath>
     </template>
 
     <template id="external_layout_wave_inherited" inherit_id="web.external_layout_wave">
         <xpath expr="//div[@name='company_address']" position="attributes">
-            <attribute name="t-if">not (o and o.is_l10n_do_fiscal_invoice)</attribute>
+            <attribute name="t-if">not (o and o._name == 'account.move' and o.is_l10n_do_fiscal_invoice)</attribute>
         </xpath>
     </template>
 
     <template id="external_layout_bubble_inherited" inherit_id="web.external_layout_bubble">
         <xpath expr="//div[@name='company_address']" position="attributes">
-            <attribute name="t-if">not (o and o.is_l10n_do_fiscal_invoice)</attribute>
+            <attribute name="t-if">not (o and o._name == 'account.move' and o.is_l10n_do_fiscal_invoice)</attribute>
         </xpath>
     </template>
 
