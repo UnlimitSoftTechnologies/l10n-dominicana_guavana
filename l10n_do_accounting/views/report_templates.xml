@@ -8,7 +8,8 @@
     -->
     <template id="fiscal_info">
         <h5 t-if="o.fiscal_type_id">
-            <t t-if="o.fiscal_type_id.prefix == 'B13'">
+            <!-- The name of an e-CF type is already its title (see the translations of the types) -->
+            <t t-if="o.fiscal_type_id.prefix == 'B13' or o.fiscal_type_id.prefix.startswith('E')">
                 <span t-field="o.fiscal_type_id.name" />
             </t>
             <t t-else="">

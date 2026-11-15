@@ -1576,3 +1576,128 @@ msgid ""
 msgstr ""
 "si el monto de la factura es mayor a RD$250,000.00, el cliente debe tener "
 "RNC o Cédula para emitir la factura"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_consumo
+msgid "Consumer"
+msgstr "Consumo"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_consumer_supplier
+msgid "Electronic Consumer"
+msgstr "Factura de Consumo Electrónica"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_credit_note_client
+msgid "Electronic Credit Note"
+msgstr "Nota de Crédito Electrónica"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_debit_note_client
+msgid "Electronic Debit Note"
+msgstr "Nota de Débito Electrónica"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_export_client
+msgid "Electronic Export"
+msgstr "Comprobante Electrónico para Exportaciones"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_purchase_electronic_credit_note
+msgid "Electronic Fiscal Purchase Credit Note"
+msgstr "Nota de Crédito de Compras Fiscales Electrónica"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_fiscal_electronic_purchase
+msgid "Electronic Fiscal Purchases"
+msgstr "Compras Fiscales Electrónicas"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_exterior_supplier
+msgid "Electronic Foreign Payments"
+msgstr "Comprobante Electrónico para Pagos al Exterior"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_gov_client
+msgid "Electronic Governmental"
+msgstr "Comprobante Electrónico Gubernamental"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_informal_supplier
+msgid "Electronic Informal Supplier"
+msgstr "Comprobante Electrónico de Compras"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_minor_supplier
+msgid "Electronic Minor Expenses"
+msgstr "Comprobante Electrónico para Gastos Menores"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_special_client
+msgid "Electronic Special Regime"
+msgstr "Comprobante Electrónico para Regímenes Especiales"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.ecf_fiscal_client
+msgid "Electronic Tax Credit"
+msgstr "Factura de Crédito Fiscal Electrónica"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_exportacion
+msgid "Export"
+msgstr "Exportaciones"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_purchase_credit_note
+msgid "Fiscal Purchase Credit Note"
+msgstr "Nota de Crédito de Compras Fiscales"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_purchase_debit_note
+msgid "Fiscal Purchase Debit Note"
+msgstr "Nota de Débito de Compras Fiscales"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_fiscal_purchase
+msgid "Fiscal Purchases"
+msgstr "Compras Fiscales"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_exterior
+msgid "Foreign Payments"
+msgstr "Pagos al Exterior"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_gubernamental
+msgid "Governmental"
+msgstr "Gubernamental"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_fiscal_import
+msgid "Imports"
+msgstr "Importaciones"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_informal
+msgid "Informal Supplier"
+msgstr "Proveedor Informal"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_minor
+msgid "Minor Expenses"
+msgstr "Gastos Menores"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_unico
+msgid "Single Income"
+msgstr "Registro Único de Ingresos"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_especial
+msgid "Special Regime"
+msgstr "Regímenes Especiales"
+
+#. module: l10n_do_accounting
+#: model:account.fiscal.type,name:l10n_do_accounting.fiscal_type_credito_fiscal
+msgid "Tax Credit"
+msgstr "Crédito Fiscal"
