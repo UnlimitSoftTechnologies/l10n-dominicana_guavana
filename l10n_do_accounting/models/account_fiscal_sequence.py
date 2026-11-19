@@ -401,6 +401,7 @@ class AccountFiscalType(models.Model):
         string="Name",
         required=True,
         copy=False,
+        translate=True,
     )
 
     active = fields.Boolean(string="Active", default=True)
