@@ -45,18 +45,12 @@
 
             <xpath expr="//form/sheet/group/group[@id='header_left_group']/label[@for='ref']"
                 position="attributes">
-                <attribute name="invisible">
-                    is_l10n_do_fiscal_invoice or move_type not in ('in_invoice', 'in_receipt', 'in_refund')
-                </attribute>
-                <attribute name="string">NCF</attribute>
+                <attribute name="invisible">1</attribute>
             </xpath>
 
             <xpath expr="//form/sheet/group/group[@id='header_left_group']/field[@name='ref']"
                 position="attributes">
-                <attribute name="invisible">
-                    is_l10n_do_fiscal_invoice or move_type not in ('in_invoice', 'in_receipt', 'in_refund')
-                </attribute>
-                <attribute name="readonly">state != 'draft'</attribute>
+                <attribute name="invisible">1</attribute>
             </xpath>
 
             <xpath
@@ -88,9 +82,10 @@
                     readonly="state != 'draft'" />
 
                 <field name="ref" string="NCF" readonly="1"
-                    invisible="not ref or not assigned_sequence" />
+                    invisible="not is_l10n_do_fiscal_invoice or not ref or not assigned_sequence" />
 
-                <field name="ref" string="NCF" invisible="assigned_sequence or not fiscal_type_id"
+                <field name="ref" string="NCF"
+                    invisible="not is_l10n_do_fiscal_invoice or assigned_sequence or not fiscal_type_id"
                     required="is_l10n_do_fiscal_invoice and not assigned_sequence"
                     readonly="state != 'draft'" />
 
