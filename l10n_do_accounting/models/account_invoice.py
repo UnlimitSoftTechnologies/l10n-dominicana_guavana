@@ -420,10 +420,6 @@ class AccountInvoice(models.Model):
 
         return super(AccountInvoice, self)._onchange_partner_id()
 
-    def _allows_zero_total(self):
-        """Whether this fiscal invoice can be validated with a total of 0."""
-        return False
-
     def _post(self, soft=True):
         """
         Before an invoice is changed to the 'open' state, validate that all
@@ -432,7 +428,7 @@ class AccountInvoice(models.Model):
         """
         for inv in self:
             if inv.is_l10n_do_fiscal_invoice and inv.is_invoice():
-                if inv.amount_total == 0 and not inv._allows_zero_total():
+                if inv.amount_total == 0:
                     raise UserError(
                         _(
                             "You cannot validate an invoice whose total amount is equal to 0"
