@@ -68,14 +68,13 @@
         <field name="model">account.fiscal.sequence</field>
         <field name="arch" type="xml">
             <list>
-                <field name="name" readonly="state != 'draft'" />
-                <field name="fiscal_type_id" readonly="state != 'draft'" />
+                <field name="name" />
+                <field name="fiscal_type_id" />
                 <field name="next_fiscal_number" />
-                <field name="sequence_start" readonly="state != 'draft'" />
-                <field name="sequence_end" readonly="state != 'draft'" />
+                <field name="sequence_start" />
+                <field name="sequence_end" />
                 <field name="state" />
-                <field name="company_id" readonly="state != 'draft'"
-                    groups="base.group_multi_company" />
+                <field name="company_id" groups="base.group_multi_company" />
             </list>
         </field>
     </record>
@@ -85,9 +84,8 @@
         <field name="model">account.fiscal.sequence</field>
         <field name="arch" type="xml">
             <search>
-                <field name="state" invisible="1" />
-                <field name="name" readonly="state != 'draft'" />
-                <field name="fiscal_type_id" readonly="state != 'draft'" />
+                <field name="name" />
+                <field name="fiscal_type_id" />
                 <filter name="draft" string="Draft" domain="[('state','=','draft')]" />
                 <filter name="active" string="Active" domain="[('state','in',('active', 'draft'))]" />
                 <filter name="queue" string="Queue" domain="[('state','=','queue')]" />

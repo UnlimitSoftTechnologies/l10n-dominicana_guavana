@@ -84,7 +84,7 @@
 
                 <field name="expense_type"
                     invisible="move_type not in ['in_invoice', 'in_refund'] or not is_l10n_do_fiscal_invoice"
-                    required="is_l10n_do_fiscal_invoice or move_type in ['in_invoice', 'in_refund']"
+                    required="is_l10n_do_fiscal_invoice and move_type in ['in_invoice', 'in_refund']"
                     readonly="state != 'draft'" />
 
                 <field name="ref" string="NCF" readonly="1"
@@ -95,8 +95,8 @@
                     readonly="state != 'draft'" />
 
                 <field name="origin_out"
-                    invisible="move_type not in ['out_refund', 'in_refund'] and not is_debit_note"
-                    required="(move_type in ['out_refund', 'in_refund']) and is_l10n_do_fiscal_invoice and is_debit_note"
+                    invisible="move_type not in ['out_refund', 'in_refund'] or not is_debit_note"
+                    required="move_type in ['out_refund', 'in_refund'] or is_l10n_do_fiscal_invoice and is_debit_note"
                     readonly="state != 'draft'" />
 
                 <field name="ncf_expiration_date" readonly="1"
