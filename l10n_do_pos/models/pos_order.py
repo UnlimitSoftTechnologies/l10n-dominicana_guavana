@@ -90,6 +90,13 @@ class PosOrder(models.Model):
         for order in self.sudo().browse([o['id'] for o in order_ids]):
             if order.config_id.invoice_journal_id.l10n_do_fiscal_journal \
                     and order.state != 'invoiced' \
+                    and order.amount_total < 0 \
+                    and order.ncf_origin_out \
+                    and not order.ncf:
+                order._assign_refund_fiscal_data()
+
+            if order.config_id.invoice_journal_id.l10n_do_fiscal_journal \
+                    and order.state != 'invoiced' \
                     and order.amount_total != 0 \
                     and order.ncf:
 
@@ -104,6 +111,32 @@ class PosOrder(models.Model):
                 order._generate_pos_order_invoice()
             
         return pos_data
+
+    def _assign_refund_fiscal_data(self):
+        """
+        A return has no NCF when it arrives: the point of sale only asks for one
+        for a sale. The server takes it from the sequence of the credit note, in
+        the same transaction as the invoice, so a failure gives the number back.
+        """
+        self.ensure_one()
+        fiscal_type = self.env['account.fiscal.type'].search([
+            ('type', '=', 'out_refund'),
+            ('active', '=', True),
+        ], order='id', limit=1)
+        if not fiscal_type:
+            raise UserError(
+                _('There is no active fiscal type for credit notes, please create or activate it.')
+            )
+
+        fiscal_data = self.get_next_fiscal_sequence(
+            fiscal_type.id, self.company_id.id, []
+        )
+        self.write({
+            'ncf': fiscal_data['ncf'],
+            'fiscal_type_id': fiscal_type.id,
+            'fiscal_sequence_id': fiscal_data['fiscal_sequence_id']['id'],
+            'ncf_expiration_date': fiscal_data['ncf_expiration_date'],
+        })
 
     def get_next_fiscal_sequence(self, fiscal_type_id, company_id, payments):
         """
