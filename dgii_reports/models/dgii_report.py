@@ -796,6 +796,17 @@ class DgiiReport(models.Model):
         return True if (p_date.year <= i_date.year) and (
             p_date.month <= i_date.month) else False
 
+    def _get_pos_payment_form(self, payment):
+        """Payment form of a payment reconciled without an account.payment
+        (i.e. a PoS payment). Falls back to 'credit' when it can't be found.
+        """
+        # pos.payment is only there when point_of_sale is installed
+        if 'pos.payment' not in self.env:
+            return 'credit'
+        move = self.env['account.move'].browse(payment.get('move_id'))
+        pos_payment = move.pos_payment_ids[:1]
+        return pos_payment.payment_method_id.journal_id.payment_form or 'credit'
+
     def _get_sale_payments_forms(self, invoice_id):
         payments_dict = self._get_payments_dict()
         Payment = self.env['account.payment']
@@ -819,8 +830,12 @@ class DgiiReport(models.Model):
                                 invoice_id.invoice_date,
                             )
                 else:
-                    payments_dict['swap'] += self._convert_to_user_currency(
-                        invoice_id.currency_id, payment['amount'], invoice_id.invoice_date)
+                    payments_dict[self._get_pos_payment_form(payment)] += \
+                        self._convert_to_user_currency(
+                            invoice_id.currency_id,
+                            payment['amount'],
+                            invoice_id.invoice_date,
+                        )
             payments_dict['credit'] += self._convert_to_user_currency(
                 invoice_id.currency_id, invoice_id.amount_residual, invoice_id.invoice_date)
         else:
@@ -872,7 +887,7 @@ class DgiiReport(models.Model):
         return "|".join([
             RNC, ID_TYPE, NCF, NCM, INCOME_TYPE, INV_DATE, WH_DATE, INV_AMOUNT,
             INV_ITBIS, WH_ITBIS, PRC_ITBIS, WH_ISR, PCR_ISR, ISC, OTH_TAX,
-            LEG_TIP, CASH, BANK, CARD, CRED, SWAP, BOND, OTHR
+            LEG_TIP, CASH, BANK, CARD, CRED, BOND, SWAP, OTHR
         ])
 
     def _generate_607_txt(self, records, qty):
