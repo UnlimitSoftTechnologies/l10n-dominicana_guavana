@@ -168,7 +168,7 @@
         <field name="type">out_refund</field>
         <field name="sequence">19</field>
         <field name="padding">10</field>
-        <field name="requires_document" eval="True" />
+        <field name="requires_document" eval="False" />
         <field name="assigned_sequence" eval="True" />
         <field name="active" eval="True" />
     </record>
