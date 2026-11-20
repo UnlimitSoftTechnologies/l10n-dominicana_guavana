@@ -3,7 +3,7 @@
 
 import pytz
 import re
-from datetime import datetime
+from datetime import date, datetime
 
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError, UserError
@@ -38,11 +38,11 @@ class AccountFiscalSequence(models.Model):
 
     expiration_date = fields.Date(
         required=True,
-        readonly=True,
         tracking=True,
-        default=datetime.strptime(
-            str(int(str(fields.Date.today())[0:4]) + 1) + "-12-31", "%Y-%m-%d"
-        ).date(),
+        compute="_compute_expiration_date",
+        store=True,
+        readonly=False,
+        precompute=True,
     )
 
     fiscal_type_id = fields.Many2one(
@@ -193,6 +193,19 @@ class AccountFiscalSequence(models.Model):
                 limit=1,
             )
             self.sequence_start = fs_id.sequence_end + 1 if fs_id else 1
+
+    @api.depends("fiscal_type_id")
+    def _compute_expiration_date(self):
+        """
+        B (paper) NCF expire at the end of next year, E (e-CF) one year later
+        """
+        year = get_l10n_do_datetime().year
+        for rec in self:
+            # Never move the date of a sequence that is already confirmed
+            if rec.state != "draft" and rec.expiration_date:
+                continue
+            years = 2 if (rec.fiscal_type_id.prefix or "").startswith("E") else 1
+            rec.expiration_date = date(year + years, 12, 31)
 
     @api.constrains("fiscal_type_id", "state")
     def _validate_unique_active_type(self):
