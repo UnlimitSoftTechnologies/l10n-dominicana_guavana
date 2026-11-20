@@ -6,3 +6,4 @@ from . import pos_payment_method
 from . import pos_payment
 from . import res_partner
 from . import account_fiscal_type
+from . import res_company
