@@ -51,7 +51,7 @@
         <div class="row pt-2 mb-4">
             <div class="col-6" name="fiscal_company_data">
                 <strong class="d-block fs-5">
-                    <span t-field="o.company_id.name" />
+                    <span t-out="o.company_id.parent_id.name or o.company_id.name" />
                 </strong>
                 <div t-if="o.company_id.vat">
                     <t t-esc="o.company_id.country_id.vat_label or 'Tax ID'" />: <span

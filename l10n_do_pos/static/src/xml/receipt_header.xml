@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
     <t t-name="l10n_do_pos.ReceiptHeader" t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
+        <xpath expr="//div[@t-if='props.data.company.name']" position="replace">
+            <div t-if="props.data.company.parent_company_name or props.data.company.name" t-esc="props.data.company.parent_company_name or props.data.company.name" />
+        </xpath>
         <xpath expr="//div[hasclass('d-flex flex-column align-items-center')]" position="after">
             <t t-if="props.data.l10n_do_fiscal_journal">
                 <div class="d-flex flex-column">
