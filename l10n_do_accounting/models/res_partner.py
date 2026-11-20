@@ -124,10 +124,10 @@ class Partner(models.Model):
                         new_fiscal_type = self._get_fiscal_type_domain("B01")
 
                 else:
-                    new_fiscal_type = self._get_fiscal_type_domain("B02")
+                    new_fiscal_type = self.env["account.fiscal.type"]._get_default_sale_type()
 
             elif is_dominican_partner and not partner.sale_fiscal_type_id:
-                new_fiscal_type = self._get_fiscal_type_domain("B02")
+                new_fiscal_type = self.env["account.fiscal.type"]._get_default_sale_type()
 
             else:
                 new_fiscal_type = partner.sale_fiscal_type_id
