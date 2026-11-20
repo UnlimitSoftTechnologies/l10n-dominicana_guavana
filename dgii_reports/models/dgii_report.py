@@ -914,10 +914,12 @@ class DgiiReport(models.Model):
             SaleLine = self.env['dgii.reports.sale.line']
             SaleLine.search([('dgii_report_id', '=', rec.id)]).unlink()
 
+            # The 607 only takes B (paper) NCF; e-CF (E) go in the e-CF report
             invoice_ids = self._get_invoices(
-                ['posted'], 
+                ['posted'],
                 ['out_invoice', 'out_refund']
-            )
+            ).filtered(
+                lambda i: (i.fiscal_type_id.prefix or '').startswith('B'))
 
             line = 0
             excluded_line = line
