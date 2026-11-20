@@ -18,7 +18,7 @@ patch(PosOrder.prototype, {
             if (partner && partner.sale_fiscal_type_id) {
                 this.set_fiscal_type(this.get_fiscal_type_by_id(partner.sale_fiscal_type_id.id));
             } else {
-                this.set_fiscal_type(this.get_fiscal_type_by_prefix('B02'))
+                this.set_fiscal_type(this.get_default_fiscal_type())
             }
         }
     },
@@ -78,9 +78,17 @@ patch(PosOrder.prototype, {
             }
         });
         if (!res_fiscal_type) {
-            res_fiscal_type = this.get_fiscal_type_by_prefix('B02');
+            res_fiscal_type = this.get_default_fiscal_type();
         }
         return res_fiscal_type;
+    },
+
+    get_default_fiscal_type() {
+        // The one marked as default; B02 while none is
+        return (
+            this.fiscal_types.find((fiscal_type) => fiscal_type.is_default) ||
+            this.get_fiscal_type_by_prefix('B02')
+        );
     },
 
     get_fiscal_type_by_prefix(prefix) {
@@ -100,7 +108,7 @@ patch(PosOrder.prototype, {
         if (partner && partner.sale_fiscal_type_id) {
             this.set_fiscal_type(this.get_fiscal_type_by_id(partner.sale_fiscal_type_id.id));
         } else {
-            this.set_fiscal_type(this.get_fiscal_type_by_prefix('B02'));
+            this.set_fiscal_type(this.get_default_fiscal_type());
         }
     },
 
