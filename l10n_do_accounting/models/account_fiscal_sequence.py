@@ -419,6 +419,13 @@ class AccountFiscalType(models.Model):
 
     active = fields.Boolean(string="Active", default=True)
 
+    is_default = fields.Boolean(
+        string="Default",
+        copy=False,
+        help="Fiscal type used by default in sales (invoices and PoS) for the "
+        "customers that do not have one. Only one can be the default.",
+    )
+
     sequence = fields.Integer(
         string="Sequence",
         default=10,
@@ -487,6 +494,43 @@ class AccountFiscalType(models.Model):
                         rec.type, rec.prefix or "",
                     )
                 )
+
+    @api.constrains("is_default", "type", "active")
+    def _check_is_default(self):
+        for rec in self.filtered("is_default"):
+            if rec.type != "out_invoice" or not rec.active:
+                raise ValidationError(
+                    _("The default Fiscal Type must be an active sales one.")
+                )
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        records = super().create(vals_list)
+        records._unset_other_defaults()
+        return records
+
+    def write(self, vals):
+        res = super().write(vals)
+        if vals.get("is_default"):
+            self._unset_other_defaults()
+        return res
+
+    def _unset_other_defaults(self):
+        """Only one Fiscal Type can be the default: the last one set wins."""
+        defaults = self.filtered("is_default")
+        if len(defaults) > 1:
+            raise ValidationError(_("Only one Fiscal Type can be the default."))
+        if defaults:
+            self.with_context(active_test=False).search(
+                [("is_default", "=", True), ("id", "!=", defaults.id)]
+            ).write({"is_default": False})
+
+    @api.model
+    def _get_default_sale_type(self):
+        """The default sales Fiscal Type, or the B02 one while none is set."""
+        return self.search([("is_default", "=", True)], limit=1) or self.search(
+            [("type", "=", "out_invoice"), ("prefix", "=", "B02")], limit=1
+        )
 
     @api.depends("type")
     def _compute_journal_type(self):

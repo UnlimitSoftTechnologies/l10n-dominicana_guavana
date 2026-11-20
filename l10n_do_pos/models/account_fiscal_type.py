@@ -11,4 +11,4 @@ class AccountFiscalPosition(models.Model):
 
     @api.model
     def _load_pos_data_fields(self, config_id):
-        return ['name', 'requires_document', 'fiscal_position_id', 'prefix', 'type']
+        return ['name', 'requires_document', 'fiscal_position_id', 'prefix', 'type', 'is_default']
