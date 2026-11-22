@@ -1986,16 +1986,19 @@ class DgiiReport(models.Model):
             invoice_ids += ExteriorLine.search([
                 ('dgii_report_id', '=', report.id)
             ]).mapped('invoice_id')
+            # One write per status: a write on account.move per invoice is very slow
+            by_status = {'done': self.env['account.move'], 'normal': self.env['account.move']}
             for inv in invoice_ids:
-                if (inv.payment_state in ['paid', 'in_payment'] or inv.state == 'cancel') and \
-                        self._include_in_current_report(inv):
-                    inv.fiscal_status = 'done'
-                    continue
-
-                if self._has_withholding(inv):
-                    inv.fiscal_status = 'normal'
+                if (
+                    (inv.payment_state in ['paid', 'in_payment'] or inv.state == 'cancel')
+                    and self._include_in_current_report(inv)
+                ):
+                    status = 'done'
                 else:
-                    inv.fiscal_status = 'done'
+                    status = 'normal' if self._has_withholding(inv) else 'done'
+                by_status[status] |= inv
+            for status, invoices in by_status.items():
+                invoices.filtered(lambda i: i.fiscal_status != status).write({'fiscal_status': status})
 
     
     def state_sent(self):
