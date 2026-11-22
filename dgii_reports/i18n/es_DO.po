@@ -901,6 +901,11 @@ msgid "Generate Statements"
 msgstr "Generar Reportes"
 
 #. module: dgii_reports
+#: model_terms:ir.ui.view,arch_db:dgii_reports.dgii_report_form_view
+msgid "Regenerate Statements"
+msgstr "Regenerar Reportes"
+
+#. module: dgii_reports
 #: model:ir.model.fields.selection,name:dgii_reports.selection__dgii_reports__state__generated
 msgid "Generated"
 msgstr "Generado"

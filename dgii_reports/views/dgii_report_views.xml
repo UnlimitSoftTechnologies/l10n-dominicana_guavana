@@ -11,7 +11,7 @@
                     <button name="generate_report" string="Generate Statements" type="object"
                         class="oe_highlight" invisible="state != 'draft' or not active" />
 
-                    <button name="generate_report" string="Generate Statements" type="object"
+                    <button name="generate_report" string="Regenerate Statements" type="object"
                         invisible="state != 'generated' or not active" />
 
                     <button name="state_sent" string="Set as sent" type="object"
