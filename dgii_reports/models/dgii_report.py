@@ -29,6 +29,18 @@ class DgiiReport(models.Model):
         companies = self.env['res.company'].search([('id', 'child_of', self.company_id.id)])
         return companies.ids
 
+    def _with_group_companies(self):
+        """
+        The report of the parent company includes its branches, but the
+        record rules only let a user read the active companies of the switcher.
+        Activate, for the report, the parent company and its branches that
+        the user can access, the parent company being the first one.
+        """
+        self.ensure_one()
+        allowed = self.env.user.company_ids.ids
+        ids = [i for i in self._company_and_children_ids() if i in allowed and i != self.company_id.id]
+        return self.with_context(allowed_company_ids=[self.company_id.id] + ids)
+
     @api.constrains('name', 'company_id')
     def _validate_company(self):
         for rec in self:
@@ -1914,6 +1926,7 @@ class DgiiReport(models.Model):
     
     def _generate_report(self):
 
+        self = self._with_group_companies()
         self._compute_606_data()
         self._compute_607_data()
         self._compute_608_data()
@@ -1987,7 +2000,7 @@ class DgiiReport(models.Model):
     
     def state_sent(self):
         for report in self:
-            report._invoice_status_sent()
+            report._with_group_companies()._invoice_status_sent()
             report.state = 'sent'
 
     def get_606_list_view(self):
