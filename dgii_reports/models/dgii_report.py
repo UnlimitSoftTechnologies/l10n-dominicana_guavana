@@ -587,6 +587,14 @@ class DgiiReport(models.Model):
 
         return invoice_ids
 
+    @staticmethod
+    def _block_unreported(invoices):
+        """
+        Set fiscal_status 'blocked' only where it is empty, and in one write:
+        every write on account.move is very slow, so never write it per invoice
+        """
+        invoices.filtered(lambda inv: not inv.fiscal_status).write({'fiscal_status': 'blocked'})
+
     def _get_invoices(self, states, types):
         """
         Given rec and state, return a set of records of invoices
@@ -715,11 +723,10 @@ class DgiiReport(models.Model):
                 ['in_invoice', 'in_refund']
             )
 
+            self._block_unreported(invoice_ids)
             line = 0
             report_data = ''
             for inv in invoice_ids:
-                inv.fiscal_status = 'blocked' if not inv.fiscal_status else \
-                    inv.fiscal_status
                 line += 1
                 rnc_ced = self.formatted_rnc_cedula(
                     inv.partner_id.vat
@@ -927,11 +934,10 @@ class DgiiReport(models.Model):
             income_dict = self._get_income_type_dict()
             csmr_dict = self._get_csmr_vals_dict()
 
+            self._block_unreported(invoice_ids)
             report_data = ''
             for inv in invoice_ids:
                 income_dict = self._process_income_dict(income_dict, inv)
-                inv.fiscal_status = \
-                    'blocked' if not inv.fiscal_status else inv.fiscal_status
                 rnc_ced = self.formatted_rnc_cedula(
                     inv.partner_id.vat
                 ) if inv.fiscal_type_id.prefix != 'B12' \
@@ -1053,11 +1059,11 @@ class DgiiReport(models.Model):
                 ['cancel'], 
                 ['out_invoice', 'out_refund'],
             )
+            self._block_unreported(invoice_ids.filtered('ref'))
             line = 0
             report_data = ''
             for inv in invoice_ids:
                 if inv.ref:
-                    inv.fiscal_status = 'blocked' if not inv.fiscal_status else inv.fiscal_status
                     line += 1
                     values = {
                         'dgii_report_id': rec.id,
@@ -1130,11 +1136,10 @@ class DgiiReport(models.Model):
                 ['in_invoice', 'in_refund']
             ).filtered(lambda inv: (inv.partner_id.country_id.code != 'DO') and \
                                     (inv.fiscal_type_id.prefix == 'B17'))
+            self._block_unreported(invoice_ids)
             line = 0
             report_data = ''
             for inv in invoice_ids:
-                inv.fiscal_status = 'blocked' if not inv.fiscal_status else \
-                    inv.fiscal_status
                 line += 1
                 values = {
                     'dgii_report_id': rec.id,
