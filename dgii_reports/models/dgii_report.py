@@ -29,6 +29,18 @@ class DgiiReport(models.Model):
         companies = self.env['res.company'].search([('id', 'child_of', self.company_id.id)])
         return companies.ids
 
+    def _with_group_companies(self):
+        """
+        The report of the parent company includes its branches, but the
+        record rules only let a user read the active companies of the switcher.
+        Activate, for the report, the parent company and its branches that
+        the user can access, the parent company being the first one.
+        """
+        self.ensure_one()
+        allowed = self.env.user.company_ids.ids
+        ids = [i for i in self._company_and_children_ids() if i in allowed and i != self.company_id.id]
+        return self.with_context(allowed_company_ids=[self.company_id.id] + ids)
+
     @api.constrains('name', 'company_id')
     def _validate_company(self):
         for rec in self:
@@ -1914,6 +1926,7 @@ class DgiiReport(models.Model):
     
     def _generate_report(self):
 
+        self = self._with_group_companies()
         self._compute_606_data()
         self._compute_607_data()
         self._compute_608_data()
@@ -1973,21 +1986,24 @@ class DgiiReport(models.Model):
             invoice_ids += ExteriorLine.search([
                 ('dgii_report_id', '=', report.id)
             ]).mapped('invoice_id')
+            # One write per status: a write on account.move per invoice is very slow
+            by_status = {'done': self.env['account.move'], 'normal': self.env['account.move']}
             for inv in invoice_ids:
-                if (inv.payment_state in ['paid', 'in_payment'] or inv.state == 'cancel') and \
-                        self._include_in_current_report(inv):
-                    inv.fiscal_status = 'done'
-                    continue
-
-                if self._has_withholding(inv):
-                    inv.fiscal_status = 'normal'
+                if (
+                    (inv.payment_state in ['paid', 'in_payment'] or inv.state == 'cancel')
+                    and self._include_in_current_report(inv)
+                ):
+                    status = 'done'
                 else:
-                    inv.fiscal_status = 'done'
+                    status = 'normal' if self._has_withholding(inv) else 'done'
+                by_status[status] |= inv
+            for status, invoices in by_status.items():
+                invoices.filtered(lambda i: i.fiscal_status != status).write({'fiscal_status': status})
 
     
     def state_sent(self):
         for report in self:
-            report._invoice_status_sent()
+            report._with_group_companies()._invoice_status_sent()
             report.state = 'sent'
 
     def get_606_list_view(self):

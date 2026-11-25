@@ -45,6 +45,8 @@
     'assets':{
         'web.assets_backend': [
             '/dgii_reports/static/src/scss/dgii_reports.scss',
+            '/dgii_reports/static/src/js/period_field.js',
+            '/dgii_reports/static/src/xml/period_field.xml',
             # '/dgii_reports/static/src/js/widget.js'
         ]
     },
