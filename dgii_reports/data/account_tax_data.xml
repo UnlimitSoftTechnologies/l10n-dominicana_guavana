@@ -64,7 +64,7 @@
     <record id="account.1_tax_18_property_cost" model="account.tax">
         <field name="l10n_do_tax_type">itbis_cost</field>
     </record>
-    <record id="account.1_ret_10_income_person" model="account.tax">
+    <record id="account.1_ret_15_income_person" model="account.tax">
         <field name="l10n_do_tax_type">isr</field>
         <field name="isr_retention_type">02</field>
     </record>
@@ -79,7 +79,7 @@
     <record id="account.1_tax_18_serv_cost" model="account.tax">
         <field name="l10n_do_tax_type">itbis_cost</field>
     </record>
-    <record id="account.1_ret_10_income_rent" model="account.tax">
+    <record id="account.1_ret_15_income_rent" model="account.tax">
         <field name="l10n_do_tax_type">isr</field>
         <field name="isr_retention_type">01</field>
     </record>
@@ -87,7 +87,7 @@
         <field name="l10n_do_tax_type">isr</field>
         <field name="isr_retention_type">03</field>
     </record>
-    <record id="account.1_ret_2_income_person" model="account.tax">
+    <record id="account.1_ret_3_income_person" model="account.tax">
         <field name="l10n_do_tax_type">isr</field>
         <field name="isr_retention_type">03</field>
     </record>
